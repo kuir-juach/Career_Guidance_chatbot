@@ -52,7 +52,7 @@ python train_model.py
 python app.py
 ```
 
-Visit: `http://localhost:5000`
+
 
 ## Dataset
 
@@ -135,28 +135,3 @@ rouge-score>=0.1.2
 sacrebleu>=2.3.1
 numpy>=1.21.0
 ```
-Expected results after training:
-
-- BLEU Score: ~0.15-0.25
-- ROUGE-1: ~0.25-0.35
-- ROUGE-L: ~0.20-0.30
-- Domain accuracy: ~80-90%
-
-**Memory Errors:**
-
-- Reduce batch size in training scripts
-- Use T5-small instead of larger models
-
-**Model Not Found:**
-
-- Ensure training completed successfully
-- Check `./career_model` or `./fine_tuned_model` directories exist
-
-
-
-1. **Generate dataset**: Creates training data
-2. **Train model**: Fine-tune T5 for career guidance
-3. **Evaluate**: Measure performance with metrics
-4. **Test**: Verify functionality
-5. **Deploy**: Launch web interface
-
