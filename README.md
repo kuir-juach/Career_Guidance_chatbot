@@ -112,8 +112,15 @@ Tests model with sample questions including out-of-domain handling.
 ```
 Q: I love chemistry and math. What career should I consider?
 A: Based on your interest in chemistry and math, consider careers in chemical engineering, pharmacology, materials science, or data science.
+<<<<<<< HEAD
 Q: Can I do law if I'm not good at math?
 A: Absolutely! Law requires strong analytical thinking, reading comprehension, and communication skills rather than advanced math.
+=======
+
+Q: Can I do law if I'm not good at math?
+A: Absolutely! Law requires strong analytical thinking, reading comprehension, and communication skills rather than advanced math.
+
+>>>>>>> e45b47b (updated)
 Q: What's the weather like today?
 A: I'm designed to help with career and education guidance. Could you ask me about career paths or educational choices?
 ```
@@ -154,7 +161,11 @@ numpy>=1.21.0
 4. **Live Demo** (3 min): Use `app.py` interface with various questions
 5. **Out-of-Domain** (1 min): Test non-career questions
 
+<<<<<<< HEAD
 ## Performance
+=======
+## 🔍 Performance
+>>>>>>> e45b47b (updated)
 
 Expected results after training:
 
@@ -163,7 +174,11 @@ Expected results after training:
 - ROUGE-L: ~0.20-0.30
 - Domain accuracy: ~80-90%
 
+<<<<<<< HEAD
 ## Troubleshooting
+=======
+## 🚨 Troubleshooting
+>>>>>>> e45b47b (updated)
 
 **TensorFlow Issues:**
 
@@ -181,7 +196,11 @@ pip install --upgrade tensorflow
 - Ensure training completed successfully
 - Check `./career_model` or `./fine_tuned_model` directories exist
 
+<<<<<<< HEAD
 ## Usage
+=======
+## 📞 Usage
+>>>>>>> e45b47b (updated)
 
 1. **Generate dataset**: Creates training data
 2. **Train model**: Fine-tune T5 for career guidance

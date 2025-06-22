@@ -1,0 +1,48 @@
+# GitHub Repository Setup and Push Commands
+
+## Step 1: Create GitHub Repository
+1. Go to https://github.com
+2. Click "New repository"
+3. Name: "Career-Guidance-Chatbot"
+4. Description: "AI-powered career guidance chatbot using TensorFlow T5"
+5. Make it Public
+6. Don't initialize with README (we have our own)
+7. Click "Create repository"
+
+## Step 2: Initialize Local Git Repository
+cd C:\Users\Kuir\Desktop\Chat_bot
+git init
+git add .
+git commit -m "Initial commit: Career Guidance Chatbot with TensorFlow T5"
+
+## Step 3: Connect to GitHub Repository
+git remote add origin https://github.com/YOUR_USERNAME/Career-Guidance-Chatbot.git
+git branch -M main
+
+## Step 4: Push to GitHub
+git push -u origin main
+
+## Alternative: If you get authentication errors
+# Use GitHub CLI (install from https://cli.github.com/)
+gh auth login
+gh repo create Career-Guidance-Chatbot --public --source=. --remote=origin --push
+
+## Files that will be pushed:
+- Career_Guidance_Chatbot.ipynb (Main submission notebook)
+- app.py (Flask web application)
+- dataset.py (Dataset generation)
+- train_model.py (TensorFlow training)
+- fine_tune_model.py (Advanced training)
+- evaluate_model.py (Model evaluation)
+- test_model.py (Model testing)
+- demo_train.py (Training demo)
+- career_dataset.json (475 Q&A pairs)
+- career_dataset.csv (CSV format)
+- requirements.txt (Dependencies)
+- README.md (Documentation)
+- PROJECT_REPORT.md (Comprehensive report)
+- SUBMISSION_README.md (Submission guide)
+- VIDEO_SCRIPT.md (Demo script)
+
+## Repository URL will be:
+https://github.com/YOUR_USERNAME/Career-Guidance-Chatbot
