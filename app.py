@@ -72,15 +72,7 @@ def home():
                 addMessage(message, 'user');
                 input.value = '';
 
-                // Add loading effect
-                const loadingDiv = document.createElement('div');
-                loadingDiv.className = 'message bot loading';
-                loadingDiv.id = 'loading';
-                loadingDiv.textContent = '🤖 Thinking...';
-                document.getElementById('chat').appendChild(loadingDiv);
-                scrollChat();
-
-                // Send to server
+               // Send to server
                 const startTime = Date.now();
                 fetch('/chat', {
                     method: 'POST',
